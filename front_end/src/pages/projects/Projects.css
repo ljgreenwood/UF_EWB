@@ -26,6 +26,16 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     border-radius: 6px;
   }
+
+.project_teamindv:hover {
+  transform: scale(1.1);  /* Scale up on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add shadow for emphasis */
+}
+
+/* Optional: Hover effect on image */
+.project_teamindv:hover .project_teamimg {
+  transform: scale(1.1);  /* Image zoom-in on hover */
+}
   
 .project_teamimg {
     width: 450px;  

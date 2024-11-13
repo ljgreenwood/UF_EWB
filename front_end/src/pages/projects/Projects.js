@@ -33,22 +33,25 @@ function Projects() {
   return (
     <div className="project_teams">
       <h1 className="project_teamheading">OUR PROJECTS</h1>
+      <Link to="/nepal">
+        <div 
+          className="project_teamindv projects_fade-in"
+          ref={(el) => (projectRefs.current[0] = el)}
+        >
+          <img src={nepalTeams} alt="Nepal Team" className="project_teamimg" />
+          <Link to="/nepal" className="project_underlinehover project_teamclick">NEPAL</Link>
+        </div>
+      </Link>
 
-      <div 
-        className="project_teamindv projects_fade-in"
-        ref={(el) => (projectRefs.current[0] = el)}
-      >
-        <img src={nepalTeams} alt="Nepal Team" className="project_teamimg" />
-        <Link to="/nepal" className="project_underlinehover project_teamclick">NEPAL</Link>
-      </div>
-
-      <div 
-        className="project_teamindv projects_fade-in"
-        ref={(el) => (projectRefs.current[1] = el)}
-      >
-        <img src={peruTeams} alt="Peru Team" className="project_teamimg" />
-        <Link to="/peru" className="project_underlinehover project_teamclick">PERU</Link>
-      </div>
+      <Link to="/nepal">
+        <div 
+          className="project_teamindv projects_fade-in"
+          ref={(el) => (projectRefs.current[1] = el)}
+        >
+          <img src={peruTeams} alt="Peru Team" className="project_teamimg" />
+          <Link to="/peru" className="project_underlinehover project_teamclick">PERU</Link>
+        </div>
+      </Link>
     </div>
   );
 }
