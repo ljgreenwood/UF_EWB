@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import "../peru/PeruProjects.css";
 import { Link } from 'react-router-dom';
-import NepalPic from "../nepal/nepalpics/nepalpicture.jpg";
+import NepalPic from "../nepal/nepalpics/nepalpicture.jpg"; // remove? not used
 import largeSS from "../nepal/nepalpics/nepalSS.jpg";
+import Map from "../../components/Map/Map"; // import map component
 
 function Phoolbari_2021_24() {
     const fadeInSectionRef = useRef([]);
@@ -51,13 +52,14 @@ function Phoolbari_2021_24() {
                     <Link to="/nepal/phoolbari_2017_21" className="peruHomeButton">Phoolbari (2017)</Link>
                     <Link to="/nepal/khanalthok_2014_18" className="peruHomeButton">Khanalthok (2014)</Link>
                 </div>
+                <center><div><Map text="Phoolbari" /></div></center>
                 <div className="body-text-nepal fade-in-section" ref={addToRefs}>
                     <p>The University of Florida Engineers Without Borders Nepal Team is excited to announce upcoming progress in Phoolbari, Nepal as we develop a plan for new and improved sanitation and hydration systems at Shree Mathurapati Secondary School. Phoolbari is a village located in rural Nepal, nearly a three-hour drive from Kathmandu, the closest major city. In Phoolbari, many water sources are turbid, containing harmful bacteria such as fecal coliform. These water sources are also very few and far away, with the closest water source to the secondary school being nearly a 30-minute walk through mountainous terrain. This lack of clean and accessible water sources at the secondary school has led to several cases of preventable waterborne illnesses among the student population, placing a severe strain on the students, teachers, and community members of Phoolbari. Additionally, since the spread of the coronavirus in early 2020, Nepali communities have been taking many hygienic precautions to avoid illness, placing a major emphasis on handwashing, despite the lack of infrastructure to facilitate these habits. By seeking a long-term solution to this problem, the community hopes to eradicate all cases of waterborne illness at the school by supplying the students with potable drinking water and improving their sanitary systems for a fighting chance against bacteria and disease. </p>
                     <p>The 4-year partnership will be split into two assessment trips, one implementation trip, and one monitoring and evaluation trip as follows:</p>
                     <div className="sub-title">
                         <h4>Assessment (Remote 2021-22 and January 2023)</h4>
                     </div>
-                    
+
                     <p>In May of 2021, members of the Nepal team were unable to travel to Phoolbari for a site assessment on account of coronavirus travel bans. Although restricted, the chapter organized its first-ever remote assessment, relying heavily on our community partner to examine the issues and express to us the most dire needs of the community. This past May of 2022, members of the Nepal team completed a preliminary report stating the conditions of the secondary school with suggestions for repairs and construction of new facilities. To finalize the data collection needed for a solid design and implementation, select members of the team traveled to the secondary school at the start of 2023 with the intent of repairing known issues in tandem with assessing the site for additional information.</p>
                     <p>Our team traveled to Nepal to complete an assessment of the site in order to build on their research to make a more comprehensive design plan for how to best meet the school's needs. Some examples of data collected on site were measurements, water quality tests, survey data, and other relevant information pertinent to design implementation. This trip allowed for a physical inspection of the site's existing infrastructure, the surveying of communities, and the assessment of needs. In addition, the team was able to reestablish its long-standing relationship with the community after a lack of travel during the COVID-19 pandemic. The team met with school and community leadership to ensure the project is aligned with the community's needs and wishes. Part of the social aspect of the trip included educational outreach by providing lesson plans on hygiene and water-related topics. </p>
                     <div className="sub-title">
@@ -77,7 +79,7 @@ function Phoolbari_2021_24() {
                 <div className="text-w-img-div2 fade-in-section" ref={addToRefs}>
                     <div className="documentation-div">
                         <div className="documentation-img">
-                            <img src={largeSS} alt="largess"/>
+                            <img src={largeSS} alt="largess" />
                         </div>
                     </div>
                 </div>
